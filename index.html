@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffeeamania - Home</title>
+<link rel="stylesheet" href="./bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color:#2b1d16; color:#fff;">
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+     <a class="navbar-item" href="./index.html">
+       <span class="icon">
+        <i class="fa-solid fa-mug-saucer"></i>
+       </span>
+       <span>CoffeeMania</span>
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+<div class="navbar-end">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">Главная</a>
+      <a class="navbar-item" href="about.html">О компании</a>
+      <a class="navbar-item" href="news.html">Продукты</a>
+      <a class="navbar-item" href="contact.html">Контакты</a>
+      <a class="navbar-item" href="team.html">Команда</a>
+    </div>
+  </div>
+</nav>
+</div>
+
+<section class="hero is-large" style="background-image:url('./img/homep/latteart.jpg'); background-size:cover; background-position:center;">
+  <div class="hero-body" style="background-color:rgba(0,0,0,0.5);">
+    <div class="container has-text-centered">
+      <h1 class="title has-text-white is-1">Coffeeamania</h1>
+      <h2 class="subtitle has-text-white is-4">Премиальные коффейные зерна</h2>
+      <a class="button is-warning is-medium" href="about.html">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="columns is-vcentered">
+    <div class="column is-half">
+      <h2 class="title has-text-white">Кто мы?</h2>
+      <p class="subtitle is-3">Coffeeamania приносит лучшие кофейные зёрна из ферм по всему миру прямо в вашу чашку. Мы верим, что кофе - это не просто напиток - это опыт.</p>
+    </div>
+    <div class="column ">
+      <figure class="image is-2by3">
+        <img src="./img/homep/circlecups.jpg">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="title has-text-centered has-text-white">Наши продукты</h2>
+  <div class="columns">
+    <div class="column">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3"><img src="./img/homep/coffeeseeds.jpg"></figure>
+        </div>
+        <div class="card-content">
+          <p class="title is-5">Arabica Blend</p>
+          <p>Богатый аромат и мягкий вкус от высокогорных ферм.</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3"><img src="./img/homep/espresso-classic.jpg"></figure>
+        </div>
+        <div class="card-content">
+          <p class="title is-5">Espresso Classic</p>
+          <p>Сильный и насыщенный вкус для любителей эспрессо.</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3"><img src="./img/homep/seedbag.png"></figure>
+        </div>
+        <div class="card-content">
+          <p class="title is-5">House Special</p>
+          <p>Фирменная смесь, приготовленная до совершенства на нашем заводе.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="has-text-centred" style="display: flex; justify-content: center;">
+<a href="./news.html" class="button is-warning is-rounded">Больше наших продуктов</a>
+</div>
+</section>
+
+<section class="hero is-medium has-text-centered">
+  <div class="hero-body">
+    <p class="title has-text-white">Присоеденись к нам!</p>
+    <p class="subtitle has-text-white">Откройте для себя наши продукты и познакомьтесь с командой Coffeeamania.</p>
+    <a class="button is-warning is-medium" href="team.html">Взгляни на нашу команду</a>
+  </div>
+</section>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.navbar-burger');
+  const menu = document.querySelector('.navbar-menu');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('is-active');
+    menu.classList.toggle('is-active');
+  });
+});
+</script>
+
+<footer class="footer has-background-dark has-text-white-ter">
+  <div class="content has-text-centered">
+    <p><strong>Coffeeamania</strong> © 2025. All rights reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/coffeemania_almaty/">Instagram</a> ·
+      <a href="https://t.me/kokhdl">Telegram</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

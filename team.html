@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team - Coffeeamania</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./bulma.min.css">
+<style>
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2b1d16;
+  color: #fff;
+}
+.section {
+  flex: 1;
+}
+</style>
+</head>
+<body style="background-color:#2b1d16; color:#fff;">
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+     <a class="navbar-item" href="./index.html">
+       <span class="icon">
+        <i class="fa-solid fa-mug-saucer"></i>
+       </span>
+       <span>CoffeeMania</span>
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+<div class="navbar-end">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">Главная</a>
+      <a class="navbar-item" href="about.html">О компании</a>
+      <a class="navbar-item" href="news.html">Продукты</a>
+      <a class="navbar-item" href="contact.html">Контакты</a>
+      <a class="navbar-item" href="team.html">Команда</a>
+    </div>
+  </div>
+</nav>
+</div>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title has-text-white">Наша Команда</h1>
+    <div class="columns is-multiline">
+      <div class="column is-one-quarter">
+        <div class="card">
+          <div class="card-image"><figure class="image is-4by3"><img src="./img/teamp/artem.png"></figure></div>
+          <div class="card-content"><p class="title is-5">Артём Волков</p><p class="subtitle is-6">CEO</p></div>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="card">
+          <div class="card-image"><figure class="image is-4by3"><img src="./img/teamp/sofia.png"></figure></div>
+          <div class="card-content"><p class="title is-5">София Кузнецова</p><p class="subtitle is-6">Глава отдела продаж</p></div>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="card">
+          <div class="card-image"><figure class="image is-4by3"><img src="./img/teamp/ilya.png"></figure></div>
+          <div class="card-content"><p class="title is-5">Илья Орлов</p><p class="subtitle is-6">Менеджмент-лид</p></div>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="card">
+          <div class="card-image"><figure class="image is-4by3"><img src="./img/teamp/daria.png"></figure></div>
+          <div class="card-content"><p class="title is-5">Дарья Смирнова</p><p class="subtitle is-6">Старший бариста</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-one-quarter">
+        <div class="card">
+          <div class="card-image"><figure class="image is-4by3"><img src="./img/teamp/max.png"></figure></div>
+          <div class="card-content"><p class="title is-5">Максим Андреев</p><p class="subtitle is-6">Главный обжарщик</p></div>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="card">
+          <div class="card-image"><figure class="image is-4by3"><img src="./img/teamp/elena.png"></figure></div>
+          <div class="card-content"><p class="title is-5">Елена Морозова</p><p class="subtitle is-6">Маркетинг-директор</p></div>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="card">
+          <div class="card-image"><figure class="image is-4by3"><img src="./img/teamp/nikita.png"></figure></div>
+          <div class="card-content"><p class="title is-5">Никита Лебедев</p><p class="subtitle is-6">Операционный менеджер</p></div>
+        </div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="card">
+          <div class="card-image"><figure class="image is-4by3"><img src="./img/teamp/anna.png"></figure></div>
+          <div class="card-content"><p class="title is-5">Анна Сергеева</p><p class="subtitle is-6">Дизайнер упаковки</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.navbar-burger');
+  const menu = document.querySelector('.navbar-menu');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('is-active');
+    menu.classList.toggle('is-active');
+  });
+});
+</script>
+
+<footer class="footer has-background-dark has-text-white-ter">
+  <div class="content has-text-centered">
+    <p><strong>Coffeeamania</strong> © 2025. All rights reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/coffeemania_almaty/">Instagram</a> ·
+      <a href="https://t.me/kokhdl">Telegram</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

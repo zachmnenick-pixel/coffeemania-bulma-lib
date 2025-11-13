@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News - Coffeeamania</title>
+<link rel="stylesheet" href="./bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2b1d16;
+  color: #fff;
+}
+.section {
+  flex: 1;
+}
+</style>
+<body style="background-color:#2b1d16; color:#fff;">
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+     <a class="navbar-item" href="./index.html">
+       <span class="icon">
+        <i class="fa-solid fa-mug-saucer"></i>
+       </span>
+       <span>CoffeeMania</span>
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+<div class="navbar-end ">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">Главная</a>
+      <a class="navbar-item" href="about.html">О компании</a>
+      <a class="navbar-item" href="news.html">Продукты</a>
+      <a class="navbar-item" href="contact.html">Контакты</a>
+      <a class="navbar-item" href="team.html">Команда</a>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="has-text-centred has-text-white title" style="display: flex; justify-content: center;padding-top:5rem;"><h1>Наши продукты</h1></div>
+    <div class="columns is-multiline mt-6" id="product-grid">
+      <!-- 1 -->
+      <div class="column is-one-quarter product-card" data-category="beans">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/productsp/arabica-blend.avif"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Arabica Blend</p>
+            <p>Богатый аромат и мягкий вкус от высокогорных ферм.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="column is-one-quarter product-card" data-category="beans">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/homep/espresso-classic.jpg"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Espresso Classic</p>
+            <p>Сильный и насыщенный вкус для любителей эспрессо.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="column is-one-quarter product-card" data-category="beans">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/homep/seedbag.png"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">House Special</p>
+            <p>Фирменная смесь, приготовленная до совершенства.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4–12 новые карточки -->
+      <div class="column is-one-quarter product-card" data-category="ground">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/homep/latteart.jpg"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Morning Roast</p>
+            <p>Идеальный молотый кофе для лёгкого начала дня.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter product-card" data-category="ground">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/productsp/dark-roast.avif"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Dark Roast</p>
+            <p>Глубокий насыщенный вкус с нотами шоколада и карамели.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter product-card" data-category="capsules">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/productsp/esspresso-capsules.avif"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Espresso Capsules</p>
+            <p>Современные капсулы для быстрого и ароматного кофе.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter product-card" data-category="capsules">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/productsp/classic-capsules.avif"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Classic Capsules</p>
+            <p>Классический вкус кофе в удобном формате капсул.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter product-card" data-category="beans">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/productsp/arabica-premium.avif"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Premium Arabica</p>
+            <p>Лучшие зёрна из Колумбии и <br>Бразилии.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter product-card" data-category="ground">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/productsp/latte-blend.avif"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Latte Blend</p>
+            <p>Мягкая смесь специально для латте и капучино.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter product-card" data-category="accessories">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/productsp/french-press.avif"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">French Press</p>
+            <p>Стильный аксессуар для заваривания кофе вручную.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter product-card" data-category="accessories">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/productsp/coffee-grinder.avif"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Coffee Grinder</p>
+            <p>Кофемолка с регулировкой степени <br>помола.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-quarter product-card" data-category="accessories">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3"><img src="./img/productsp/coffee-mug-set.avif"></figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Coffee Mug Set</p>
+            <p>Набор стильных <br> керамических кружек. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.navbar-burger');
+  const menu = document.querySelector('.navbar-menu');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('is-active');
+    menu.classList.toggle('is-active');
+  });
+});
+</script>
+
+<footer class="footer has-background-dark has-text-white-ter">
+  <div class="content has-text-centered">
+    <p><strong>Coffeeamania</strong> © 2025. All rights reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/coffeemania_almaty/">Instagram</a> ·
+      <a href="https://t.me/kokhdl">Telegram</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Coffeeamania</title>
+<link rel="stylesheet" href="./bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2b1d16;
+  color: #fff;
+}
+.section {
+  flex: 1;
+}
+.contact-box {
+  background-color: #3a2720;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+.input, .textarea {
+  background-color: #1e1e1e;
+  border: none;
+  color: #fff;
+}
+.input::placeholder, .textarea::placeholder {
+  color: #aaa;
+}
+.button.is-link {
+  background-color: #6b4b33;
+  border: none;
+}
+.button.is-link:hover {
+  background-color: #8b6343;
+}
+</style>
+</head>
+<body>
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="./index.html">
+      <span class="icon"><i class="fa-solid fa-mug-saucer"></i></span>
+      <span>CoffeeMania</span>
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" href="index.html">Главная</a>
+      <a class="navbar-item" href="about.html">О компании</a>
+      <a class="navbar-item" href="news.html">Продукты</a>
+      <a class="navbar-item" href="contact.html">Контакты</a>
+      <a class="navbar-item" href="team.html">Команда</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="contact-box">
+          <h1 class="title has-text-white has-text-centered">Свяжитесь с нами</h1>
+          <p class="subtitle has-text-centered has-text-grey-light">Мы будем рады вашим вопросам, предложениям и идеям!</p>
+          <form>
+            <div class="field">
+              <label class="label has-text-white">Имя</label>
+              <div class="control"><input class="input" type="text" placeholder="Ваше имя"></div>
+            </div>
+            <div class="field">
+              <label class="label has-text-white">Email</label>
+              <div class="control"><input class="input" type="email" placeholder="Ваш email"></div>
+            </div>
+            <div class="field">
+              <label class="label has-text-white">Сообщение</label>
+              <div class="control"><textarea class="textarea" placeholder="Ваше сообщение"></textarea></div>
+            </div>
+            <div class="control has-text-centered">
+              <button class="button is-link is-medium">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer has-background-dark has-text-white-ter">
+  <div class="content has-text-centered">
+    <p><strong>Coffeeamania</strong> © 2025. All rights reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/coffeemania_almaty/">Instagram</a> ·
+      <a href="https://t.me/kokhdl">Telegram</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.navbar-burger');
+  const menu = document.querySelector('.navbar-menu');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('is-active');
+    menu.classList.toggle('is-active');
+  });
+});
+</script>
+</body>
+</html>
